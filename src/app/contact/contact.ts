@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [MatIcon],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })

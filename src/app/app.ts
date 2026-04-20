@@ -6,6 +6,8 @@ import { Introduction } from './introduction/introduction';
 import { About } from './about/about';
 import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
@@ -24,5 +26,14 @@ export class App {
       'curve',
       this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/curve.svg'),
     );
+    this.registry.addSvgIcon(
+      'linkedin',
+      this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/linkedin.svg'),
+    );
+    this.registry.addSvgIcon(
+      'github',
+      this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/github.svg'),
+    );
+    AOS.init();
   }
 }
