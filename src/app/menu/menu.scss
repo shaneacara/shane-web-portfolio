@@ -1,0 +1,52 @@
+.menu {
+  position: fixed;
+  z-index: 2000;
+
+  &__icon {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      text-shadow:
+        0px 0px 30px #e9bcb9,
+        0px 0px 30px #e9bcb9;
+    }
+  }
+
+  &__links {
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      margin: 0;
+      padding: 20px;
+      gap: 40px;
+
+      li {
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-size: 20px;
+        text-shadow:
+          0px 0px 20px #e9bcb9,
+          0px 0px 20px #e9bcb9;
+
+        font-family: 'Syncopate';
+        background: linear-gradient(to right, #a34054, #e9bcb9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+          font-weight: 600;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

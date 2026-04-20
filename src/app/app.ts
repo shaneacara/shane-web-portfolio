@@ -8,10 +8,11 @@ import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Menu } from './menu/menu';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Introduction, About, Resume, Contact],
+  imports: [RouterOutlet, Introduction, About, Resume, Contact, Menu],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

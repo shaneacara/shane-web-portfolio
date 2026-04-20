@@ -1,25 +1,27 @@
-<div class="container">
-  <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor=".experiences">
-    <h1>SHANE'S PROFESSIONAL EXPERIENCES</h1>
-    <div class="portrait">
-      <img class="portrait__img" src="/images/shane.png" alt="portrait" />
+<section id="experiences">
+  <div class="container">
+    <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor=".experiences">
+      <h1>SHANE'S PROFESSIONAL EXPERIENCES</h1>
+      <div class="portrait">
+        <img class="portrait__img" src="/images/shane.png" alt="portrait" />
+      </div>
     </div>
-  </div>
-  <div class="experiences">
-    @for (item of experiences; track $index) {
-      <div class="experience" data-aos="zoom-in" data-aos-duration="2000">
-        <h1 class="experience__duration">{{ item.duration }}</h1>
-        <div class="experience__role">
-          <h1 class="experience__role-title">{{ item.role }}</h1>
-          <div class="experience__role-desc">
-            <ul>
-              @for (desc of item.description; track $index) {
-                <li>{{ desc }}</li>
-              }
-            </ul>
+    <div class="experiences">
+      @for (item of experiences; track $index) {
+        <div class="experience" data-aos="zoom-in" data-aos-duration="2000">
+          <h1 class="experience__duration">{{ item.duration }}</h1>
+          <div class="experience__role">
+            <h1 class="experience__role-title">{{ item.role }}</h1>
+            <div class="experience__role-desc">
+              <ul>
+                @for (desc of item.description; track $index) {
+                  <li>{{ desc }}</li>
+                }
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    }
+      }
+    </div>
   </div>
-</div>
+</section>

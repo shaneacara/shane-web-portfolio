@@ -1,0 +1,13 @@
+<div class="menu">
+  <h1 class="menu__icon" [class.active]="showLinks" (click)="toggleLinks()">SC.</h1>
+  @if (showLinks) {
+    <div class="menu__links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  }
+</div>
