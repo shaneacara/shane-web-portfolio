@@ -1,0 +1,41 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+
+  &__title {
+    font-size: 4vw;
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .experience-container {
+    height: 500px;
+    overflow-y: scroll;
+    width: 80%;
+  }
+
+  .experience {
+    display: flex;
+    gap: 40px;
+
+    &__duration {
+      text-align: right;
+      width: 40%;
+    }
+
+    &__role {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      border-left: 4px dashed;
+
+      &-desc {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 60px 20px;
+        gap: 15px;
+      }
+    }
+  }
+}

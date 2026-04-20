@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  background: #250f29;
+  background: linear-gradient(0deg, rgba(37, 15, 41, 1) 0%, rgba(27, 25, 49, 1) 100%);
+  padding: 100px 100px 140px 100px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    font-size: 5vw;
+    margin: -10px 10px 0 0;
+  }
+
+  .curve {
+    height: 80px;
+    width: 80px;
+    margin-left: 80px;
+    margin-bottom: -50px;
+  }
+}
+
+.right-content {
+  justify-items: end;
+
+  .city {
+    max-width: 60vw;
+  }
+
+  .description {
+    max-width: 500px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+}

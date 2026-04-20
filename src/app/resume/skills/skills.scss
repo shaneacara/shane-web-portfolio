@@ -1,0 +1,81 @@
+.tech-stack {
+  display: flex;
+  padding: 100px 0 100px 0;
+  border-radius: 40px;
+  background: #311038;
+  background: radial-gradient(circle, rgba(49, 16, 56, 1) 0%, rgba(34, 16, 40, 1) 100%);
+
+  .left-content {
+    width: 45%;
+
+    .title {
+      max-width: 350px;
+      text-align: right;
+      justify-self: end;
+      padding-right: 30px;
+      font-size: 70px;
+      border-right: 8px solid;
+      border-image: linear-gradient(to bottom, #a34054, #e9bcb9) 1;
+    }
+  }
+
+  .right-content {
+    width: 34%;
+    padding-left: 40px;
+
+    .nav-bar {
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 5px;
+        gap: 46px;
+        background-color: #662249;
+        width: max-content;
+        border-radius: 10px;
+
+        li {
+          padding: 5px 10px;
+          border-radius: 10px;
+          font-weight: 400;
+          cursor: pointer;
+
+          &.active {
+            background-color: #e9bcb9;
+            color: #a34054;
+          }
+
+          &:hover {
+            background-color: #e9bcb9;
+            color: #a34054;
+          }
+        }
+      }
+    }
+
+    .skills {
+      margin-top: 24px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        gap: 14px;
+        padding: 0;
+        flex-wrap: wrap;
+
+        li {
+          min-width: 90px;
+          padding: 6px 16px;
+          border-radius: 20px;
+          border: 1px solid #a34054;
+          text-align: center;
+
+          &:hover {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

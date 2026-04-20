@@ -1,0 +1,18 @@
+<div class="experiences">
+  <h1 class="experiences__title">PROFESSIONAL EXPERIENCES</h1>
+  <div class="experience-container">
+    @for (item of experiences; track $index) {
+      <div class="experience">
+        <div class="experience__duration">{{ item.duration }}</div>
+        <div class="experience__role">
+          <span class="experience__role-title">{{ item.role }}</span>
+          <div class="experience__role-desc">
+            @for (desc of item.description; track $index) {
+              <span>{{ desc }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="tech-stack">
+  <div class="left-content">
+    <h1 class="title">TECH STACK</h1>
+  </div>
+  <div class="right-content">
+    <div class="nav-bar">
+      <ul>
+        @for (item of techStack; track item.name) {
+          <li [class.active]="item.name === currentSelection" (click)="onClick(item.name)">
+            {{ item.name }}
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="skills">
+      <ul>
+        @for (skill of skills; track $index) {
+          <li class="skill">
+            {{ skill }}
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>

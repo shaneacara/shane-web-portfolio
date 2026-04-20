@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #e9bcb9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+span {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Syncopate';
+  font-size: 46px;
+  font-weight: 600;
+  background: linear-gradient(to right, #a34054, #e9bcb9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
