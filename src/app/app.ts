@@ -24,15 +24,15 @@ export class App {
   ) {
     this.registry.addSvgIcon(
       'curve',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/curve.svg'),
+      this.sanitizer.bypassSecurityTrustResourceUrl('icons/svg/curve.svg'),
     );
     this.registry.addSvgIcon(
       'linkedin',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/linkedin.svg'),
+      this.sanitizer.bypassSecurityTrustResourceUrl('icons/svg/linkedin.svg'),
     );
     this.registry.addSvgIcon(
       'github',
-      this.sanitizer.bypassSecurityTrustResourceUrl('/icons/svg/github.svg'),
+      this.sanitizer.bypassSecurityTrustResourceUrl('icons/svg/github.svg'),
     );
     AOS.init();
   }
