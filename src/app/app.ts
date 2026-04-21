@@ -16,7 +16,7 @@ import { Menu } from './menu/menu';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('shane-personal-site');
+  protected readonly title = signal('shane-web-portfolio');
 
   constructor(
     private registry: MatIconRegistry,

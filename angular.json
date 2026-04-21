@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "shane-personal-site": {
+    "shane-web-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shane-personal-site:build:production"
+              "buildTarget": "shane-web-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "shane-personal-site:build:development"
+              "buildTarget": "shane-web-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
