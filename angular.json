@@ -29,7 +29,14 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss", "node_modules/aos/dist/aos.css"]
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules"]
+            }
           },
           "configurations": {
             "production": {

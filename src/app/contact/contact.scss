@@ -1,19 +1,32 @@
+@use '../../styles.scss' as *;
+
 .contact {
   display: flex;
   flex-direction: column;
   background: #311038;
   background: radial-gradient(circle, rgb(49, 16, 56) 0%, rgb(34, 16, 40) 100%);
   justify-content: center;
-  padding: 100px 35%;
+  padding: 100px 32%;
+  @include media-breakpoint-down(xl) {
+    padding: 40px 80px;
+  }
+
+  .title {
+    @include media-breakpoint-down(xl) {
+      font-size: 5vw;
+    }
+  }
 }
 
 .desc {
   font-size: 24px;
   margin: 10px 0 14px 0;
+  @include media-breakpoint-down(xl) {
+    font-size: 16px;
+  }
 }
 
-.email,
-.linkedin {
+.item {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -26,5 +39,8 @@
 
   &__address {
     font-size: 14px;
+    @include media-breakpoint-down(xl) {
+      overflow-wrap: anywhere;
+    }
   }
 }

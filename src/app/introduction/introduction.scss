@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 .introduction {
   display: grid;
   align-items: center;
@@ -5,6 +7,13 @@
   min-height: 100vh;
   background-color: #1b1931;
   grid-template-columns: 1fr 20% 1fr;
+  @include media-breakpoint-down(xl) {
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    min-height: 90vh;
+  }
 }
 
 .name {
@@ -14,19 +23,33 @@
   margin-top: -70%;
   gap: 16px;
 
+  @include media-breakpoint-down(xl) {
+    margin-top: unset;
+    text-align: unset;
+    width: 68vw;
+  }
+
   &__pre-name {
     font-size: 26px;
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
   }
 
   &__whole-name {
-    font-family: 'Syncopate';
     font-size: 56px;
+    @include media-breakpoint-down(xl) {
+      font-size: 4vw;
+    }
   }
 }
 
 .portrait {
   &__img {
     width: stretch;
+    @include media-breakpoint-down(xl) {
+      width: 26vw;
+    }
   }
 }
 
@@ -35,15 +58,27 @@
   flex-direction: column;
   margin-top: 70%;
   gap: 16px;
+  @include media-breakpoint-down(xl) {
+    margin-top: unset;
+    width: 68vw;
+  }
 
   &__role {
-    font-family: 'Syncopate';
     font-size: 46px;
+    @include media-breakpoint-down(xl) {
+      font-size: 4vw;
+    }
   }
 
   &__details {
     font-size: 20px;
     width: 80%;
+    @include media-breakpoint-down(xl) {
+      margin-top: unset;
+    }
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
   }
 }
 

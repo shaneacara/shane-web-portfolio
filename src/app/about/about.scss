@@ -1,8 +1,14 @@
+@use '../../styles.scss' as *;
+
 .about {
   display: flex;
   background: #250f29;
   background: linear-gradient(0deg, rgba(37, 15, 41, 1) 0%, rgba(27, 25, 49, 1) 100%);
   padding: 100px 100px 140px 100px;
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+    padding: 40px 80px;
+  }
 }
 
 .left-content {
@@ -11,8 +17,12 @@
   justify-content: space-between;
 
   .title {
+    justify-self: center;
     font-size: 5vw;
     margin: -10px 10px 0 0;
+    @include media-breakpoint-down(xl) {
+      margin: 0 0 20px 0;
+    }
   }
 
   .curve {
@@ -20,19 +30,33 @@
     width: 80px;
     margin-left: 80px;
     margin-bottom: -50px;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
   }
 }
 
 .right-content {
   justify-items: end;
 
+  @include media-breakpoint-down(xl) {
+    justify-items: unset;
+  }
+
   .city {
     max-width: 60vw;
+    @include media-breakpoint-down(xl) {
+      max-width: stretch;
+      margin: 0 0 20px 0;
+    }
   }
 
   .description {
     max-width: 500px;
     text-align: justify;
     margin-top: 10px;
+    @include media-breakpoint-down(xl) {
+      max-width: unset;
+    }
   }
 }

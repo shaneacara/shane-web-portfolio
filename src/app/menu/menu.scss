@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 .menu {
   position: fixed;
   z-index: 2000;
@@ -13,6 +15,10 @@
       text-shadow:
         0px 0px 30px #e9bcb9,
         0px 0px 30px #e9bcb9;
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: 26px;
     }
   }
 
@@ -41,6 +47,10 @@
 
         &:hover {
           font-weight: 600;
+        }
+
+        @include media-breakpoint-down(xl) {
+          font-size: 16px;
         }
 
         a {
